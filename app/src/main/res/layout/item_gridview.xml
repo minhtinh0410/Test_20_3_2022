@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemGridviewActivity">
+
+    <ImageView
+        android:id="@+id/imgThing"
+        android:layout_width="219dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dauchuyendoi" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="225dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:text="Cap chuyen tu USB sang PS2"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgThing"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgThing"
+        app:layout_constraintTop_toBottomOf="@+id/imgThing" />
+
+    <RatingBar
+        android:id="@+id/rtBar"
+        android:rating="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbarSize="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvnewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="69.000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/rtBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rtBar"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <TextView
+        android:id="@+id/tvpeoPle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(15)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rtBar"
+        app:layout_constraintTop_toTopOf="@+id/rtBar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="312dp" />
+
+    <TextView
+        android:id="@+id/tvreducePercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-39%"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvnewPrice"
+        app:layout_constraintTop_toTopOf="@+id/tvnewPrice"
+        tools:layout_editor_absoluteX="264dp" />
+</android.support.constraint.ConstraintLayout>
